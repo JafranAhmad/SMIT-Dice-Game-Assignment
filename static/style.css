@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --bg-color--: #db0836;
+    --boxBG-color--: #f8f9fa;
+    --bg2-color--: #ff8fabde;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to top, #240b36, #c31432);
+}
+.title {
+    text-align: center;
+    padding: 5px 0px;
+    color: #fff;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cont {
+    width: 30%;
+    text-align: center;
+    padding: 10px 0px 4%;
+    position: relative;
+    background-color: var(--bg2-color--);
+    border-radius: 7px;
+    box-shadow: 0.1rem 0.1rem 0.2rem var(--bg-color--),
+    -0.1rem -0.1rem 0.2rem var(--bg-color--);
+}
+.newGame {
+    display: flex;
+    justify-content: space-evenly;
+}
+.newGame p{
+    width: 40%;
+    font-size: 14px;
+    background-color: var(--boxBG-color--);
+    border-radius: 15px;
+    padding: 3px 0px;
+}
+
+.newGame span i {
+    color: var(--bg-color--);
+    padding-right: 5px;
+}
+.adviceMsg {
+    width: 85%;
+    height: 110px;
+    margin: 13px auto 0px;
+    padding: 0px 5px;
+    background-color: #ff8fabef;
+}
+.adviceMsg p {
+    font-size: 14px;
+}
+.adviceMsg .firstP {
+    padding-top: 5px;
+}
+.currentScore, .totalScore {
+    width: 50%;
+    height: 55px;
+    margin: 15px auto 0px;
+    padding: 5px 10px;
+    background-color: var(--bg-color--);
+    border-radius: 8px;
+}
+.currentScore h3, .totalScore h3 {
+    font-size: 14px;
+    font-weight: 200;
+    color: #fff;
+}
+.currentScore p, .totalScore p {
+    font-size: 17px;
+    color: #fff;
+}
+
+button {
+    width: 17%;
+    height: 50px;
+    outline: none;
+    position: absolute;
+    bottom: -4.5%;
+    left: 42%;
+    right: 59%;
+    border-radius: 50%;
+    border: 3px solid var(--bg-color--);
+}
+button img {
+    width: 100%;
+    height: 50px;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+button img:hover {
+    box-shadow: 0.4rem 0.4rem 0.8rem var(--bg2-color--),
+                -0.4rem -0.4rem 0.8rem var(--bg2-color--);
+}
+
+/* Media Queries for Responsiveness */
+@media only screen and (max-width: 1070px) {
+    .cont {
+        width: 33%;
+    }
+}
+@media only screen and (max-width: 976px) {
+    .cont {
+        width: 35%;
+        padding: 10px 0px 4.5%;
+
+    }
+}
+@media only screen and (max-width: 920px) {
+    .cont {
+        width: 40%;
+         padding: 10px 0px 5%;
+    }
+}
+@media only screen and (max-width: 807px) {
+    .cont {
+        width: 45%;
+         padding: 10px 0px 5.8%;
+    }
+}
+@media only screen and (max-width: 715px) {
+    .cont {
+        width: 50%;
+         padding: 10px 0px 6.2%;
+    }
+}
+@media only screen and (max-width: 647px) {
+    .cont {
+        width: 55%;
+         padding: 10px 0px 7%;
+    }
+}
+@media only screen and (max-width: 584px) {
+    .cont {
+        width: 60%;
+         padding: 10px 0px 8%;
+    }
+}
+@media only screen and (max-width: 538px) {
+    .cont {
+        width: 70%;
+         padding: 10px 0px 11%;
+    }
+}
+@media only screen and (max-width: 465px) {
+    .cont {
+        width: 80%;
+         padding: 10px 0px 13%;
+    }
+    .currentScore, .totalScore {
+        width: 55%;
+        padding: 5px 7px;
+    }
+}
+@media only screen and (max-width: 390px) {
+    .cont {
+        width: 90%;
+         padding: 10px 0px 15%;
+    }
+    .adviceMsg {
+        height: 120px;
+    }
+   
+}
